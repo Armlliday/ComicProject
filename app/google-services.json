@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "415993870098",
+    "firebase_url": "https://rproyectocomic.firebaseio.com",
+    "project_id": "rproyectocomic",
+    "storage_bucket": "rproyectocomic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415993870098:android:fad1b90016bf859a0965cb",
+        "android_client_info": {
+          "package_name": "com.example.proyectocomic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415993870098-osoorj6tjcg1h91t5glpq6dpcor0c382.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjBkMDFIg0VMgAUHuWvNBOPmTffT8FKCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415993870098-osoorj6tjcg1h91t5glpq6dpcor0c382.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
