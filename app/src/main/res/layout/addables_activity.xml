@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:weightSum="12">
+
+        <LinearLayout
+            style="@style/parent"
+            android:background="@drawable/login_shape_bk"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <ImageView
+                style="@style/parent"
+                android:background="@drawable/ic_login_bk"
+                android:contentDescription="login background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/Card"
+        android:layout_width="390dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="280dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/whiteCardColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/backA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_rounded"
+                app:srcCompat="@drawable/ic_add" />
+
+
+
+    <TextView
+        style="@style/viewParent.headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="55dp"
+        android:soundEffectsEnabled="true"
+        android:text="Pendientes "
+        android:textSize="25sp" />
+
+
+
+    <TextView
+        android:id="@+id/tomoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="105dp"
+        android:text="Tomo"
+        android:textColor="@color/contentTextColor"/>
+
+
+
+    <TextView
+        android:id="@+id/tomoAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="105dp"
+        android:text="Editorial"
+        android:textColor="@color/contentTextColor" />
+
+
+
+    <TextView
+        android:id="@+id/yearA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="242dp"
+        android:text="Año"
+        android:textColor="@color/contentTextColor"/>
+
+
+
+    <TextView
+        android:id="@+id/yearAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="242dp"
+        android:text="Editorial"
+        android:textColor="@color/contentTextColor"/>
+
+    <TextView
+        android:id="@+id/titleAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="205dp"
+        android:text="Editorial"
+        android:textColor="@color/contentTextColor" />
+
+    <TextView
+        android:id="@+id/titleA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="205dp"
+        android:text="Título"
+        android:textColor="@color/contentTextColor" />
+
+
+    <TextView
+        android:id="@+id/writerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="135dp"
+        android:text="Escritor"
+        android:textColor="@color/contentTextColor" />
+
+    <TextView
+        android:id="@+id/drawerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="168dp"
+        android:text="Dibujante"
+        android:textColor="@color/contentTextColor"/>
+
+    <TextView
+        android:id="@+id/writerAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="135dp"
+        android:text="Editorial"
+        android:textColor="@color/contentTextColor"/>
+
+    <TextView
+        android:id="@+id/drawerAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="168dp"
+        android:text="Editorial"
+        android:textColor="@color/contentTextColor"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/descA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="320dp"
+        android:text="Descripción"
+        android:textStyle="bold"
+        android:textColor="@color/contentTextColor"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/descAC"
+        android:layout_width="315dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="365dp"
+        android:text="Editorial"
+        android:textColor="#090909" />
+
+
+
+    <Button
+        android:id="@+id/acceptA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/whiteTextColor"
+        android:background="@drawable/button_rounded"
+        android:text="Aceptar" />
+
+    <Button
+        android:id="@+id/declineA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/whiteTextColor"
+        android:background="@drawable/button_rounded_red"
+        android:text="rechazar" />
+
+
+</RelativeLayout>

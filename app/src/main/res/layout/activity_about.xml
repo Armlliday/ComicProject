@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="navigation.About"
+    android:layout_above="@id/bottom_navigation"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/Card"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button_updatables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/comic_gradient"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub1Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Actualizables" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub1Title"
+                        android:text="En esta sección encontrarás los cómics que están pendientes de actualizaciones" />
+
+                    <ImageView
+
+                        style="@style/homeCardImage"
+                        android:src="@drawable/actualizable" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/button_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_updatables">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/comic_gradient"
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub2Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:text="Favoritos" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub2Title"
+                            android:text="En esta sección encontrarás tus cómics favoritos" />
+
+                        <ImageView
+
+                            style="@style/homeCardImage"
+                            android:src="@drawable/favorite" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_searches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_fav">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/comic_gradient"
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub3Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:text="Recientes" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub3Title"
+                            android:text="En esta sección encontrarás los cómics que has visitado recientemente" />
+
+                        <ImageView
+
+                            style="@style/homeCardImage"
+                            android:src="@drawable/recientes" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_searches">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/comic_gradient"
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub4Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:text="Agregar" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub4Title"
+                            android:text="En esta sección encontrarás los cómics que están pendientes por ser agregados" />
+
+                        <ImageView
+
+                            style="@style/homeCardImage"
+                            android:src="@drawable/add" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:weightSum="12">
+
+        <LinearLayout
+            style="@style/parent"
+            android:background="@drawable/login_shape_bk"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <ImageView
+                style="@style/parent"
+                android:layout_height="143dp"
+                android:background="@drawable/ic_login_bk"
+                android:contentDescription="login background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/Card"
+        android:layout_width="390dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/whiteCardColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/addTomoButton"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/about"
+                android:background="@drawable/button_rounded_border"
+                android:backgroundTint="#3BD30000"
+                app:srcCompat="@drawable/ic_plus" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_acces"
+                android:text="Tablero"
+                android:textColor="#050505"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/textView12"
+                style="@style/viewParent.headerText.contentText"
+                android:layout_below="@+id/about"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Queremos darte un poco más, interactúa con las funciones que te ofrecemos."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        android:foreground="?attr/selectableItemBackground"
+        app:menu="@menu/menu_navigation"
+        app:elevation="10dp"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/bottom_navigation_color"
+        app:itemTextColor="@color/bottom_navigation_color"
+        app:itemBackground="@color/bottomNavigationBackground"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
