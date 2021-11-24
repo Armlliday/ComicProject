@@ -1,0 +1,2 @@
+rootProject.name='proyectocomic'
+include ':app'
